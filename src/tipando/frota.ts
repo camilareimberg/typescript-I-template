@@ -1,4 +1,13 @@
-export const frota: {}[] = [
+// está tipando o array definindo o TFrota
+export type TFrota = {
+  marca: string,
+  modelo: string,
+  ano: number
+}
+
+// outra forma de fazer: export const frota: Array<TFrota> = [
+
+export const frota: TFrota[] = [
   {
     marca: 'Chevrolet',
     modelo: 'Onix',
